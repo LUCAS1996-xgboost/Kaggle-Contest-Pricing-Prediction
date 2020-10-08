@@ -1,1 +1,2 @@
 # Kaggle-Contest-Pricing-Prediction
+In this project, I participated in a kaggle competition. The goal is to predict the housing price as accurate as possible which can help buyers and sellers in the market to get fair evaluation of houses. I took several steps including business understanding, data exploring, cleaning, feature engineering and modeling to finally make the final predictions. The best model I built via stacking combined lasso, ridge, random forest etc. as the first layer and feed into a meta model (XGboost) to have the lowest RMSE on the dataset.
