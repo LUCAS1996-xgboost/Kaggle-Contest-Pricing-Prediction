@@ -89,10 +89,11 @@ In the modeling part, I firstly used Linear regression to check the benchmark an
 In this project, we participated in a kaggle competition. The goal is to predict the housing price as accurate as possible which can help buyers and sellers in the market to get fair evaluation of houses. We took several steps including business understanding, data exploring, cleaning, feature engineering and modeling to finally make the final predictions, which help us ranks at top 14% among all teams. The best model we built via stacking combined lasso, ridge, random forest etc. as the first layer and feed into a meta model (XGboost) to have the lowest RMSE on the dataset.
 
 ## References
-
-*Aggarwal, C. C. 2018. Neural Network and Deep Learning: A Textbook. Springer: New York.
-*Bengio, Y., Goodfellow, I.J., Courville, A. 2015. Deep Learning. 
-*Domingos, P. 2012. A Few Useful Things to Know about Machine Learning. Communication of the ACM. 55(10). pp.78-87.
-*Kubat, M. 2017. An Introduction to Machine Learning. (2ed) Springer: University of Miami.
-*Lgual, L and Segui, S. 2017. Introduction to Data Science:A Python Approach to Concepts, Techniques and Applications. Springer:Barcelona.
-*Zocca, V., Spacagna, G., Slater, D., Roelants, P. 2017. Python Deep Learning. Packt:Birmingham.
+```
+Aggarwal, C. C. 2018. Neural Network and Deep Learning: A Textbook. Springer: New York.
+Bengio, Y., Goodfellow, I.J., Courville, A. 2015. Deep Learning. 
+Domingos, P. 2012. A Few Useful Things to Know about Machine Learning. Communication of the ACM. 55(10). pp.78-87.
+Kubat, M. 2017. An Introduction to Machine Learning. (2ed) Springer: University of Miami.
+Lgual, L and Segui, S. 2017. Introduction to Data Science:A Python Approach to Concepts, Techniques and Applications. Springer:Barcelona.
+Zocca, V., Spacagna, G., Slater, D., Roelants, P. 2017. Python Deep Learning. Packt:Birmingham.
+```
