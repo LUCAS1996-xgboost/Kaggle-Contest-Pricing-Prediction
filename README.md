@@ -90,9 +90,9 @@ In this project, we participated in a kaggle competition. The goal is to predict
 
 ## References
 
--Aggarwal, C. C. 2018. Neural Network and Deep Learning: A Textbook. Springer: New York.
--Bengio, Y., Goodfellow, I.J., Courville, A. 2015. Deep Learning. 
--Domingos, P. 2012. A Few Useful Things to Know about Machine Learning. Communication of the ACM. 55(10). pp.78-87.
--Kubat, M. 2017. An Introduction to Machine Learning. (2ed) Springer: University of Miami.
--Lgual, L and Segui, S. 2017. Introduction to Data Science:A Python Approach to Concepts, Techniques and Applications. Springer:Barcelona.
--Zocca, V., Spacagna, G., Slater, D., Roelants, P. 2017. Python Deep Learning. Packt:Birmingham.
+*Aggarwal, C. C. 2018. Neural Network and Deep Learning: A Textbook. Springer: New York.
+*Bengio, Y., Goodfellow, I.J., Courville, A. 2015. Deep Learning. 
+*Domingos, P. 2012. A Few Useful Things to Know about Machine Learning. Communication of the ACM. 55(10). pp.78-87.
+*Kubat, M. 2017. An Introduction to Machine Learning. (2ed) Springer: University of Miami.
+*Lgual, L and Segui, S. 2017. Introduction to Data Science:A Python Approach to Concepts, Techniques and Applications. Springer:Barcelona.
+*Zocca, V., Spacagna, G., Slater, D., Roelants, P. 2017. Python Deep Learning. Packt:Birmingham.
