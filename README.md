@@ -1,4 +1,7 @@
 # Kaggle-Contest-Pricing-Prediction
+[image](http://github.com/Muyang-Niu/Kaggle-Contest-Pricing-Prediction/raw/master/image/Kaggle.png)
+
+
 Here is the [Technical Report](https://github.com/Muyang-Niu/Kaggle-Contest-Pricing-Prediction/blob/main/Technical%20Report%20of%20Kaggle.pdf)
 
 Final Ranking: `TOP 14.1%` in all candidates (747/5280)
