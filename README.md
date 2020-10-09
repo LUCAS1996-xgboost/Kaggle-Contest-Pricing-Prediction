@@ -3,8 +3,9 @@
 
 
 Here is the [Technical Report](https://github.com/Muyang-Niu/Kaggle-Contest-Pricing-Prediction/blob/main/Technical%20Report%20of%20Kaggle.pdf)
-
 Final Ranking: `TOP 14.1%` in all candidates (747/5280)
+Created by [Muyang Niu](https://www.linkedin.com/in/muyang-niu-a48b16178/)
+
 ## Abstract
 In this project, I participated in a kaggle competition. The goal is to predict the housing price as accurate as possible which can help buyers and sellers in the market to get fair evaluation of houses. I took several steps including business understanding, data exploring, cleaning, feature engineering and modeling to finally make the final predictions. The best model I built via stacking combined lasso, ridge, random forest etc. as the first layer and feed into a meta model (XGboost) to have the lowest RMSE on the dataset.
 
@@ -24,7 +25,8 @@ As for data visualization, I mainly used Python and Tableau. Seaborn was install
 
 ![image](https://github.com/Muyang-Niu/Kaggle-Contest-Pricing-Prediction/blob/main/image/2.1.png)
 ![image](https://github.com/Muyang-Niu/Kaggle-Contest-Pricing-Prediction/blob/main/image/2.2.png)
-Figure 2.1 Scatter-plot by Python             Figure 2.2 Box-plot by Python
+Figure 2.1 Scatter-plot by Python             
+Figure 2.2 Box-plot by Python
 
 In figure 2.1 we can see that the linear relationship between ‘SalePrice’ and ‘Yearbuilt’ is not very obvious. From the box-plot (figure 2.2) we can easily compare the means, data distribution and outliers. 
 
