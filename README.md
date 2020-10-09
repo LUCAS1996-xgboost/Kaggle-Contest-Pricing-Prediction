@@ -86,6 +86,7 @@ Lasso regression and Ridge regression are two famous linear regression models. T
 As deep learning improves, methods which simulate biological organism are welcomed such as neural network (Aggarwal, 2018). It is supported that as sufficient data are given, the accuracy of deep learning method tend to be better than conventional machine learning ones (Aggarwal, 2018, Fig 2.7).
 
 ![image](https://github.com/Muyang-Niu/Kaggle-Contest-Pricing-Prediction/blob/main/image/2.7.png)
+
 Figure 2.7 Comparison between Deep Learning and Machine Learning Models
 
 #### 2.4.2 Training, Testing and Evaluation
