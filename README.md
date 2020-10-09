@@ -3,7 +3,9 @@
 
 
 Here is the [Technical Report](https://github.com/Muyang-Niu/Kaggle-Contest-Pricing-Prediction/blob/main/Technical%20Report%20of%20Kaggle.pdf)
+
 Final Ranking: `TOP 14.1%` in all candidates (747/5280)
+
 Created by [Muyang Niu](https://www.linkedin.com/in/muyang-niu-a48b16178/)
 
 ## Abstract
@@ -25,6 +27,7 @@ As for data visualization, I mainly used Python and Tableau. Seaborn was install
 
 ![image](https://github.com/Muyang-Niu/Kaggle-Contest-Pricing-Prediction/blob/main/image/2.1.png)
 ![image](https://github.com/Muyang-Niu/Kaggle-Contest-Pricing-Prediction/blob/main/image/2.2.png)
+
 Figure 2.1 Scatter-plot by Python             
 Figure 2.2 Box-plot by Python
 
