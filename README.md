@@ -23,46 +23,53 @@ The 1st step was data exploration. I used Python for core coding language becaus
 As for data visualization, I mainly used Python and Tableau. Seaborn was installed in Python for making plots. Commonly, making plots by Python is effective for personal use while Tableau is more suitable for continuous variables. Overall, they both have their pros and cons.
 
 ![image](https://github.com/Muyang-Niu/Kaggle-Contest-Pricing-Prediction/blob/main/image/2.1.png)
-
+![image](https://github.com/Muyang-Niu/Kaggle-Contest-Pricing-Prediction/blob/main/image/2.2.png)
 Figure 2.1 Scatter-plot by Python             Figure 2.2 Box-plot by Python
 
 In figure 2.1 we can see that the linear relationship between ‘SalePrice’ and ‘Yearbuilt’ is not very obvious. From the box-plot (figure 2.2) we can easily compare the means, data distribution and outliers. 
 
-
+![image](https://github.com/Muyang-Niu/Kaggle-Contest-Pricing-Prediction/blob/main/image/2.3.png)
 Figure 2.3 Sub-plot by Python
 
-The sub plot shows the correlations by using ‘ sns.heatmap(correlations*100, annot=True, fmt='.0f') ’ . It can intuitively show the correlation size. Color can also used for judging the correlation. The lighter the color, the greater the correlation. 
+The sub plot shows the correlations by using `sns.heatmap(correlations*100, annot=True, fmt='.0f' ` . It can intuitively show the correlation size. Color can also used for judging the correlation. The lighter the color, the greater the correlation. 
 
 Compared with plots in Python, Tableau is easier to operate and more user friendly. For example, In Figure 2.4 we can use the filter to get the numbers of a specific building type rapidly. 
 
-
+![image](https://github.com/Muyang-Niu/Kaggle-Contest-Pricing-Prediction/blob/main/image/2.4.png)
 Figure 2.4 Bar Chart with Filter by Tableau
-2.2Data Cleaning
+
+## 2.2 Data Cleaning
 
 In this part we usually have three main stages: Drop Duplication, Fix missing values and Remove outliers. When fixing missing values, methods are different for different data types. For integers, we usually use means to fill vacancies. For objects, we fill it with ‘missing’ or the data which exists most frequently.
 
-Under the premise of satisfying the normal distribution, we use ‘df['SalePrice'].mean() + 5 * df['SalePrice'].std()’ to define the outliers. After removing the outliers, we can use the box plot to check the result. 
+Under the premise of satisfying the normal distribution, we use `df['SalePrice'].mean() + 5 * df['SalePrice'].std()`to define the outliers. After removing the outliers, we can use the box plot to check the result. 
 
-
+![image](https://github.com/Muyang-Niu/Kaggle-Contest-Pricing-Prediction/blob/main/image/2.5.png)
 Figure 2.5 Values with the same meaning
 
-Here we found a problem in Figure 2.5, ‘TwnhsE’ and ‘Twnhs’ should belong to the same type. So we used ‘df.BldgType.replace(['TwnhsE', 'Twnhs'], 'TownHouse', inplace=True)’ to combine them together.
+Here we found a problem in Figure 2.5, `TwnhsE` and `Twnhs` should belong to the same type. So we used 
+```
+df.BldgType.replace(['TwnhsE', 'Twnhs'], 'TownHouse', inplace=True)
+```
+to combine them together.
 
 ### 2.3 Feature Engineering
 Feature engineering is used to delete useless and irrelevant features. Based on the cleaned data, we can process the data in a deeper level. Here we did five steps to make it perfect: 
+```
 1.Start with domain language
 2.Create Interaction features
 3.Group spare classes
 4.Encode Dummy Variables
 5.Remove unused or redundant features.
-In step 2, we created some useful features such as the Property age of building (df['property_age'] = df.YrSold - df.YearBuilt). The purpose of step 3 is to avoid the overfitting happens. Step 4 is also very important, given that the data that we have always contain structured data and unstructured data, we have to take measures to change the unstructured data into a operable form. Actually we made it into a matrix.
+```
+In step 2, we created some useful features such as the Property age of building `df['property_age'] = df.YrSold - df.YearBuilt`. The purpose of step 3 is to avoid the overfitting happens. Step 4 is also very important, given that the data that we have always contain structured data and unstructured data, we have to take measures to change the unstructured data into a operable form. Actually we made it into a matrix.
 
 ### 2.4 Modeling
 
 When modeling is mentioned, we can’t ignore a word ‘Machine Learning’. According to Zocca et al.(2017), Machine learning is a tool used for large-scaled data processing. Russell and Norvig (2016) highlighted that the importance of machine learning is to adapt to new circumstance and to predict and extrapolate patterns. Similarly, the predicative ability of Machine learning has been widely supported (Zocca et al.,2017, Domingos, 2012). Typically, Machine learning can be mainly separated into two large scales: Supervised learning and Unsupervised learning. In Fig 2.6 we can see the main branches of machine learning models.
 
 
-
+![image](https://github.com/Muyang-Niu/Kaggle-Contest-Pricing-Prediction/blob/main/image/2.6.png)
 Figure 2.6 Basic Machine Learning Models
 
 
@@ -73,7 +80,7 @@ Lasso regression and Ridge regression are two famous linear regression models. T
 
 As deep learning improves, methods which simulate biological organism are welcomed such as neural network (Aggarwal, 2018). It is supported that as sufficient data are given, the accuracy of deep learning method tend to be better than conventional machine learning ones (Aggarwal, 2018, Fig 2.7).
 
-
+![image](https://github.com/Muyang-Niu/Kaggle-Contest-Pricing-Prediction/blob/main/image/2.7.png)
 Figure 2.7 Comparison between Deep Learning and Machine Learning Models
 
 #### 2.4.2 Training, Testing and Evaluation
@@ -84,7 +91,7 @@ We usually used MAE (Mean Absolute Error) and RMSE (Root Mean Square Error). Sin
 #### 2.4.3 Ensemble Learning
 Ensemble learning can be regarded as a theory that we use the model to make predictions. Usually we separate ensemble learning into three groups: Bagging, Boosting and Stacking. Bagging and Boosting all considers homogeneous models. However, the relationship between base models is different in these two sets. As for Stacking (Fig 2.8), it’s a creative method by using two levels models in which the second level model will work out the output of the first level model.   
 
-
+![image](https://github.com/Muyang-Niu/Kaggle-Contest-Pricing-Prediction/blob/main/image/2.8.png)
  Figure 2.8 Stacking theory in Modeling 
 
 #### 2.4.4 Comments and Limitations
@@ -92,6 +99,8 @@ In the modeling part, I firstly used Linear regression to check the benchmark an
 
 ## 3.Conclusion
 In this project, we participated in a kaggle competition. The goal is to predict the housing price as accurate as possible which can help buyers and sellers in the market to get fair evaluation of houses. We took several steps including business understanding, data exploring, cleaning, feature engineering and modeling to finally make the final predictions, which help us ranks at top 14% among all teams. The best model we built via stacking combined lasso, ridge, random forest etc. as the first layer and feed into a meta model (XGboost) to have the lowest RMSE on the dataset.
+
+![image](https://github.com/Muyang-Niu/Kaggle-Contest-Pricing-Prediction/blob/main/image/Kaggle.png)
 
 ## References
 ```
