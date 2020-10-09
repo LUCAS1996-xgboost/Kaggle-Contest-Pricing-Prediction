@@ -22,7 +22,7 @@ The 1st step was data exploration. I used Python for core coding language becaus
 
 As for data visualization, I mainly used Python and Tableau. Seaborn was installed in Python for making plots. Commonly, making plots by Python is effective for personal use while Tableau is more suitable for continuous variables. Overall, they both have their pros and cons.
 
-
+![image](https://github.com/Muyang-Niu/Kaggle-Contest-Pricing-Prediction/blob/main/image/2.1.png)
 
 Figure 2.1 Scatter-plot by Python             Figure 2.2 Box-plot by Python
 
