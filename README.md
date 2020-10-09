@@ -1,5 +1,5 @@
 # Kaggle-Contest-Pricing-Prediction
-![image]()
+![image](https://github.com/Muyang-Niu/Kaggle-Contest-Pricing-Prediction/blob/main/image/kaggle2.png)
 
 
 Here is the [Technical Report](https://github.com/Muyang-Niu/Kaggle-Contest-Pricing-Prediction/blob/main/Technical%20Report%20of%20Kaggle.pdf)
